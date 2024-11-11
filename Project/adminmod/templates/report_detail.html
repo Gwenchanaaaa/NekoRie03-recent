@@ -1,0 +1,6 @@
+<h2>Report Details</h2>
+<p><strong>Student ID:</strong> {{ report.student.idnumber }}</p>
+<p><strong>Name:</strong> {{ report.student.first_name }} {{ report.student.last_name }}</p>
+<p><strong>Incident Date:</strong> {{ report.incident_date }}</p>
+<p><strong>Violation Type:</strong> {{ report.violation_type.name }}</p>
+<a href="{% url 'studentstatus' %}">Back to Student Status</a>
